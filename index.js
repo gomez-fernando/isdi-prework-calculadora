@@ -3,11 +3,11 @@ const calculator = () =>{
   let number2;
 
   number = prompt(`Bienvenido a Calculadora!
-  Introduce un número`);
+Introduce un número`);
 
   while (isNaN(number) || number === "") {
       alert(`${number}
-  No es un número. Vuelve a intentar`);
+No es un número. Vuelve a intentar`);
       number = prompt("Introduce un número");
   }
   number = parseFloat(number);
@@ -16,8 +16,8 @@ const calculator = () =>{
       alert('Has cancelado la operación');
   } else {
       number2 = prompt(`Introduce un segundo número.
-  Este número es opcional. Si das a Ok o cancelas te devolverá
-  la raíz cuadrada del primer número que introdujiste.`);
+Este número es opcional. Si das a Ok o cancelas te devolverá
+la raíz cuadrada del primer número que introdujiste.`);
 
       while (isNaN(number2)) {
           alert("No es un número. Vuelve a intentar");
@@ -36,10 +36,10 @@ const calculator = () =>{
           ];
 
       alert(`Los resultados son:      
-  SUMA: ${number} + ${number2} = ${results[0]},
-  RESTA: ${number} - ${number2} = ${results[1]},
-  MULTIPLICACIÓN: ${number} * ${number2} = ${results[2]},
-  DIVISIÓN: ${number} / ${number2} = ${results[3]}`)
+SUMA: ${number} + ${number2} = ${results[0]},
+RESTA: ${number} - ${number2} = ${results[1]},
+MULTIPLICACIÓN: ${number} * ${number2} = ${results[2]},
+DIVISIÓN: ${number} / ${number2} = ${results[3]}`)
       }
   }
 }
